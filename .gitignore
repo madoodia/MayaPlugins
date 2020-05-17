@@ -1,0 +1,5 @@
+*.sdf
+.vs/*
+x64/*
+Debug/*
+*build/

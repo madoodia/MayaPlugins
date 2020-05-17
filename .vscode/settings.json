@@ -1,0 +1,34 @@
+{
+  "files.associations": {
+    "*.linux": "makefile",
+    "*.nmake": "makefile",
+    "*.gnu": "makefile",
+    "*.win": "makefile",
+    "qpaintevent": "cpp",
+    "qpainter": "cpp",
+    "*.tcc": "cpp",
+    "fstream": "cpp",
+    "qquickview": "cpp",
+    "qsgrendererinterface": "cpp",
+    "qquickwindow": "cpp",
+    "atomic": "cpp",
+    "chrono": "cpp",
+    "string": "cpp",
+    "functional": "cpp",
+    "sstream": "cpp",
+    "iosfwd": "cpp"
+  },
+  "editor.formatOnSave": true,
+  "files.autoSave": "onFocusChange",
+  "C_Cpp.dimInactiveRegions": true,
+  "C_Cpp.errorSquiggles": "Enabled",
+  "C_Cpp.autocomplete": "Default",
+  "C_Cpp.intelliSenseEngine": "Default",
+  "[cpp]": {
+    "editor.quickSuggestions": true
+  },
+  "[c]": {
+    "editor.quickSuggestions": true
+  },
+  "C_Cpp.clang_format_path": ""
+}

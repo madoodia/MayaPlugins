@@ -1,0 +1,54 @@
+{
+  "configurations": [
+    {
+      "name": "Win32",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/**",
+        "${SDKS_LOCATION}/googletest/include",
+        "${DEV_LOCATION}/madAPI/include"
+      ],
+      "defines": [],
+      "windowsSdkVersion": "10.0.17134.0",
+      "compilerPath": "cl.exe",
+      "cStandard": "c11",
+      "cppStandard": "c++11",
+      "intelliSenseMode": "msvc-x64"
+    },
+    {
+      "name": "Linux",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "/opt/rh/devtoolset-6/root/bin/**",
+        "${SDKS_LOCATION}/googletest/include",
+        "${DEV_LOCATION}/madAPI/include/**",
+        "${SDKS_LOCATION}/glew/include",
+        "${SDKS_LOCATION}/Qt5/include",
+        "${SDKS_LOCATION}/Qt5/include/**",
+        "${SDKS_LOCATION}/stb",
+        "${SDKS_LOCATION}/googletest/include",
+        "${SDKS_LOCATION}/OpenCL/include",
+        "${SDKS_LOCATION}/glfw/include",
+        "${SDKS_LOCATION}/glm",
+        "${SDKS_LOCATION}/CUDA/include"
+      ],
+      "defines": [],
+      "compilerPath": "/opt/rh/devtoolset-6/root/bin/gcc",
+      "cStandard": "c11",
+      "cppStandard": "c++11",
+      "intelliSenseMode": "clang-x64"
+    },
+    {
+      "name": "Mac",
+      "includePath": [
+        "${workspaceFolder}/**"
+      ],
+      "defines": [],
+      "compilerPath": "",
+      "cStandard": "c11",
+      "cppStandard": "c++11",
+      "intelliSenseMode": "clang-x64"
+    }
+  ],
+  "version": 4
+}
