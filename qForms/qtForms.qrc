@@ -1,6 +1,5 @@
 <RCC>
 <qresource>
-    <file>cubeForm.ui</file>
     <file>sphereForm.ui</file>
 </qresource>
 </RCC>

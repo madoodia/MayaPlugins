@@ -23,8 +23,8 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(SOURCE_FILES
    qtForms.cpp
    qtForms.qrc
-   cubeForm.ui
    sphereForm.ui
+   cubeForm.ui
 )
 
 # set linking libraries
