@@ -11,6 +11,9 @@ include($ENV{DEVKIT_LOCATION}/cmake/pluginEntry.cmake)
 
 project($ENV{TARGET_NAME} CXX)
 
+SET(CMAKE_CXX_STANDARD 11)
+SET(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 # set SOURCE_FILES
 set(SOURCE_FILES
    main.cpp

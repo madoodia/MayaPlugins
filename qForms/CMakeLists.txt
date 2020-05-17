@@ -14,22 +14,17 @@ project($ENV{TARGET_NAME} CXX)
 SET(CMAKE_CXX_STANDARD 11)
 SET(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-#set .mel file list
-set(MEL_FILES 
-    AEgaussianTemplate.mel
-)
-
 # set SOURCE_FILES
 set(SOURCE_FILES
    main.cpp
    gaussianNode.cpp
-   ${MEL_FILES}
 )
 
 # set linking libraries
 set(LIBRARIES
      OpenMaya
      Foundation
+
 )
 
 # Build plugin

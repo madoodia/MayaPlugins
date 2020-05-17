@@ -1,0 +1,29 @@
+/*
+# --------------------- #
+# (C) 2020 madoodia.com #
+# --------------------- #
+*/
+
+global proc AEgaussianTemplate( string $nodeName )
+{
+	AEswatchDisplay $nodeName;
+	editorTemplate -beginScrollLayout;
+
+	editorTemplate -beginLayout "Gaussian Node Attributes" -collapse 0;
+		editorTemplate -addControl "inValue";
+		editorTemplate -addControl "magnitude";
+		editorTemplate -addControl "mean";
+		editorTemplate -addControl "variance";
+	editorTemplate -endLayout;
+
+	editorTemplate -suppress "matrixObjectToWorld";
+	editorTemplate -suppress "matrixWorldToEye";
+
+	// include/call base class/node attributes
+	AEdependNodeTemplate $nodeName;
+
+	editorTemplate -addExtraControls;
+	editorTemplate -endScrollLayout;
+}
+
+
