@@ -7,6 +7,7 @@
         "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/**",
         "${SDKS_LOCATION}/googletest/include",
         "${SDKS_LOCATION}/Maya_2019/include/**",
+        "${SDKS_LOCATION}/Maya_2019/include/qt-5.6.1_vc14-include/**",
         "${DEV_LOCATION}/madAPI/include"
       ],
       "defines": [],
