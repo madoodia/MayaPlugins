@@ -1,23 +1,23 @@
-- [] MPxCommand
-- [] MGlobalCommand
-- [] MFnPlugin
-- [] MStatus
-- [] MArgList
-- [] MFnBase
-- [] MFnAttribute
-- [] MFnNumericAttribute
-- [] MFnMatrixAttribute
-- [] MPlug
-- [] MDataBlock
-- [] MDataHandle
-- [] MTypeId
-- [] MTypedAttribute
-- [] MFnMesh
-- [] MPointArray
-- [] MPoint
-- [] MMatrix
-- [] MArrayDataHandle
-- [] MFloatVectorArray
-- [] MItGeometry
-- [] MDGModifier
-- [] MDagModifier
+- [x] MGlobal
+- [ ] MPxCommand
+- [ ] MFnPlugin
+- [ ] MStatus
+- [ ] MArgList
+- [ ] MFnBase
+- [ ] MFnAttribute
+- [ ] MFnNumericAttribute
+- [ ] MFnMatrixAttribute
+- [ ] MPlug
+- [ ] MDataBlock
+- [ ] MDataHandle
+- [ ] MTypeId
+- [ ] MTypedAttribute
+- [ ] MFnMesh
+- [ ] MPointArray
+- [ ] MPoint
+- [ ] MMatrix
+- [ ] MArrayDataHandle
+- [ ] MFloatVectorArray
+- [ ] MItGeometry
+- [ ] MDGModifier
+- [ ] MDagModifier
