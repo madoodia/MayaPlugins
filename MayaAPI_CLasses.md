@@ -1,4 +1,5 @@
 - [x] MGlobal
+- [ ] MObject
 - [ ] MPxCommand
 - [ ] MFnPlugin
 - [ ] MStatus
