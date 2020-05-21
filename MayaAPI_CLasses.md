@@ -22,3 +22,4 @@
 - [ ] MItGeometry
 - [ ] MDGModifier
 - [ ] MDagModifier
+- [ ] MFnDependencyNode

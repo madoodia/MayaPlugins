@@ -6,9 +6,10 @@
 
 #include "gaussianNode.h"
 
-MTypeId GaussianNode::id(0x00000123);
-MObject GaussianNode::aOutValue;
-MObject GaussianNode::aInValue;
+MTypeId GaussianNode::id(0x00001900);
+
+MObject GaussianNode::aOutput;
+MObject GaussianNode::aInput;
 MObject GaussianNode::aMagnitude;
 MObject GaussianNode::aMean;
 MObject GaussianNode::aVariance;
@@ -39,10 +40,10 @@ void *GaussianNode::creator()
 MStatus GaussianNode::initialize()
 {
   MFnNumericAttribute nAttr;
-  aOutValue = nAttr.create("outValue", "outValue", MFnNumericData::kFloat);
+  aOutput = nAttr.create("output", "output", MFnNumericData::kFloat);
   MAKE_OUTPUT(nAttr);
 
-  aInValue = nAttr.create("inValue", "inValue", MFnNumericData::kFloat);
+  aInput = nAttr.create("input", "input", MFnNumericData::kFloat);
   MAKE_INPUT(nAttr);
   CHECK_MSTATUS(nAttr.setDefault(1.0f));
 
@@ -58,36 +59,36 @@ MStatus GaussianNode::initialize()
   MAKE_INPUT(nAttr);
   CHECK_MSTATUS(nAttr.setDefault(0.05f));
 
-  CHECK_MSTATUS(addAttribute(aOutValue));
-  CHECK_MSTATUS(addAttribute(aInValue));
+  CHECK_MSTATUS(addAttribute(aOutput));
+  CHECK_MSTATUS(addAttribute(aInput));
   CHECK_MSTATUS(addAttribute(aMagnitude));
   CHECK_MSTATUS(addAttribute(aMean));
   CHECK_MSTATUS(addAttribute(aVariance));
 
-  CHECK_MSTATUS(attributeAffects(aInValue, aOutValue));
-  CHECK_MSTATUS(attributeAffects(aMagnitude, aOutValue));
-  CHECK_MSTATUS(attributeAffects(aMean, aOutValue));
-  CHECK_MSTATUS(attributeAffects(aVariance, aOutValue));
+  CHECK_MSTATUS(attributeAffects(aInput, aOutput));
+  CHECK_MSTATUS(attributeAffects(aMagnitude, aOutput));
+  CHECK_MSTATUS(attributeAffects(aMean, aOutput));
+  CHECK_MSTATUS(attributeAffects(aVariance, aOutput));
 
   return MS::kSuccess;
 }
 
 MStatus GaussianNode::compute(const MPlug &plug, MDataBlock &block)
 {
-  if (plug != aOutValue)
+  if (plug != aOutput)
     return MS::kUnknownParameter;
 
-  float inValue = block.inputValue(aInValue).asFloat();
+  float input = block.inputValue(aInput).asFloat();
   float magnitude = block.inputValue(aMagnitude).asFloat();
   float mean = block.inputValue(aMean).asFloat();
   float variance = block.inputValue(aVariance).asFloat();
   if (variance <= 0.0f)
     variance = 0.001f;
 
-  float xMinusB = inValue - mean;
+  float xMinusB = input - mean;
   float output = magnitude * exp(-(xMinusB * xMinusB) / (2.0f * variance));
 
-  MDataHandle hOutput = block.outputValue(aOutValue);
+  MDataHandle hOutput = block.outputValue(aOutput);
   hOutput.setFloat(output);
   hOutput.setClean();
   block.setClean(plug);

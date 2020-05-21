@@ -27,8 +27,8 @@ public:
   static MTypeId id;
 
   // MObjects for custom Attributes
-  static MObject aOutValue;
-  static MObject aInValue;
+  static MObject aOutput;
+  static MObject aInput;
   static MObject aMagnitude;
   static MObject aMean;
   static MObject aVariance;

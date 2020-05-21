@@ -17,7 +17,8 @@
     "functional": "cpp",
     "sstream": "cpp",
     "iosfwd": "cpp",
-    "qtuitools": "cpp"
+    "qtuitools": "cpp",
+    "random": "cpp"
   },
   "editor.formatOnSave": true,
   "files.autoSave": "onFocusChange",
