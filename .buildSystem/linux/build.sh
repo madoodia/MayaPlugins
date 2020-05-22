@@ -45,7 +45,7 @@ fi
 
 # ---= Running EXE File =---- #
 cd $ROOT
-if [ "$OUTPUT_FILE_EXTENSION" = "exe" ]; then
+if [ "$OUTPUT_FILE_EXTENSION" = "" ]; then
     if [ -f $ROOT/$TARGET_NAME.$OUTPUT_FILE_EXTENSION ]; then
         ./$TARGET_NAME.$OUTPUT_FILE_EXTENSION
         # ./$TARGET_NAME.$OUTPUT_FILE_EXTENSION --gtest_output="xml:./$TARGET_NAME.xml"

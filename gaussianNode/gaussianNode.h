@@ -7,6 +7,8 @@
 #ifndef GAUSSIANNODE_H
 #define GAUSSIANNODE_H
 
+#include <math.h>
+
 #include <maya/MFnNumericAttribute.h>
 #include <maya/MGlobal.h>
 #include <maya/MObject.h>
