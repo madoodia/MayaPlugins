@@ -26,12 +26,12 @@ export STB_LOCATION=$SDKS_LOCATION/stb
 export OPENCL_LOCATION=$SDKS_LOCATION/OpenCL
 
 # MAYA DEVKIT_LOCATION
-export DEVKIT_LOCATION=$SDKS_LOCATION/Maya_2019/devkit
+export DEVKIT_LOCATION=$SDKS_LOCATION/Maya_2019
 
 # Qt5_DIR
 # export Qt5_DIR=$SDKS_LOCATION/Qt5/lib/cmake
 export Qt5_DIR=$DEVKIT_LOCATION/cmake/qt-cmake
-export PATH=$PATH:$DEVKIT_LOCATION/bin
+# export PATH=$PATH:$DEVKIT_LOCATION/bin
 
 # Adding Extra custom Definitions of the project
 . $ROOT/extra.sh

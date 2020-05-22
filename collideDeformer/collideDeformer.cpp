@@ -4,7 +4,7 @@
 # --------------------- #
 */
 
-#include "CollideDeformer.h"
+#include "collideDeformer.h"
 
 MTypeId CollideDeformer::id(0x00001903);
 
