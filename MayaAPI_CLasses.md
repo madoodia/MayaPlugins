@@ -23,3 +23,5 @@
 - [ ] MDGModifier
 - [ ] MDagModifier
 - [ ] MFnDependencyNode
+- [ ] MPxLocatorNode
+- [ ] MMessage
