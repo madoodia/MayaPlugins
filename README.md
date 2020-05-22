@@ -15,3 +15,8 @@ For using:
 
 
 
+in `linux`:
+- copy plugins folder of maya installation inside maya sdk
+- copy all contents of devkit inside maya sdk (one folder up)
+- extract `qt-...tar.gz` in `qt-cmake` folder in `cmake` folder
+- extract `qt-....tar.gz inside include (without folder)
