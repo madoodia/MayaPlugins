@@ -10,6 +10,8 @@ cmds.loadPlugin("nodeInfoCmd.py")
 - select a node that is connected to others
 run:
 cmds.nodeInfoCmd()
+or
+cmds.nodeInfoCmd(q=true)
 """
 
 import sys
@@ -50,7 +52,7 @@ class NodeInfoCmd(OpenMayaMPx.MPxCommand):
         dependNode = OpenMaya.MObject()
         fnDependNode = OpenMaya.MFnDependencyNode()
 
-        while iter.isDone() == 0:
+        while not iter.isDone():
 
             iter.getDependNode(dependNode)
             fnDependNode.setObject(dependNode)
