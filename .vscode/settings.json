@@ -32,5 +32,6 @@
   "[c]": {
     "editor.quickSuggestions": true
   },
-  "C_Cpp.clang_format_path": ""
+  "C_Cpp.clang_format_path": "",
+  "python.formatting.provider": "black"
 }
