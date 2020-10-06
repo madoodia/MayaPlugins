@@ -1,0 +1,1 @@
++ M3dMath 1.0.0 /plugin/dir/M3dMath.1.0.0
